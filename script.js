@@ -6,7 +6,7 @@ function compute()
     var t = document.getElementById("years").value;
 
     var complete = p*r*t/100;
-    var year = 2021+t;
+]]    var year = Number(t)+2020
     document.getElementById("result").innerText += `If you deposit ${p},\nat an interest rate of ${r}%.\nYou will recieve an amount of ${complete},\nin the year ${year}`;
 }
 function updateTextInput(val) {
